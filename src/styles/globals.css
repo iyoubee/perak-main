@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: 'Retro';
+    src: url('/assets/fonts/magic_retro.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins';
+    src: url('/assets/fonts/poppins.ttf');
+  }
+  @font-face {
+    font-family: 'PoppinsBold';
+    src: url('/assets/fonts/poppins_bold.ttf');
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-poppins;
+  }
+  .bg-primary-enabled {
+    background: linear-gradient(180deg, #b458d5 0%, #8a0ab7 100%);
+  }
+  .bg-primary-hover {
+    background: linear-gradient(180deg, #d572f8 0%, #9637b8 100%);
+  }
+  .bg-primary-pressed {
+    background: linear-gradient(180deg, #8b4da2 0%, #653875 100%);
+  }
+  .scroll-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    will-change: transform;
+  }
+}
+
+@layer utilities {
+  .text-shadow-md {
+    text-shadow: 2px 2px 0 var(--tw-shadow-color);
+  }
+  .text-shadow-lg {
+    text-shadow: 3px 3px 0 var(--tw-shadow-color);
+  }
+  .-text-shadow-lg {
+    text-shadow: -3px -3px 0 var(--tw-shadow-color);
+  }
+  .font-outline-2 {
+    -webkit-text-stroke: 0.5px rgb(244 239 211);
+  }
+  .font-outline-4 {
+    -webkit-text-stroke: 1px rgb(244 239 211);
+  }
+  .font-outline-6 {
+    -webkit-text-stroke: 1.5px rgb(244 239 211);
+  }
+  .font-outline-8 {
+    -webkit-text-stroke: 2px rgb(244 239 211);
+  }
+}
+
+.registration-ratio {
+  aspect-ratio: 5 / 1;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272b52;
+}
+.custom-border {
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='24' ry='24' stroke='%23FEB048FF' strokeWidth='4' stroke-dasharray='6%2c 20' stroke-dashoffset='12' stroke-linecap='square'/%3e%3c/svg%3e");
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* new styles added */
+.swiper-button {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+}
+
+.swiper-wrapper {
+  justify-content: start;
+}
+
+.swiper-button svg {
+  width: 4rem;
+  height: 4rem;
+}
+.image-swiper-button-prev {
+  left: 5px;
+}
+.image-swiper-button-next {
+  right: 5px;
+}
+.swiper-button-disabled {
+  opacity: 0.2;
+}
+
+table th:first-child,
+table td:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+table th:last-child,
+table td:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
