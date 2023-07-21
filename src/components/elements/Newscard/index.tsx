@@ -9,7 +9,7 @@ export const Newscard: React.FC<NewsProp> = ({ name, url }) => {
       case 'SCAN Me!':
         return '/scan-me'
       case 'Timezone':
-        return '/timezone/tetris'
+        return '/timezone'
       default:
         return '/'
     }
