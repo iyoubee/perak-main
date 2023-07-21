@@ -17,7 +17,7 @@ const ScanMeModule = () => {
   const router = useRouter()
 
   return (
-    <main className="min-h-screen bg-background-light p-4 pt-24 md:p-20">
+    <main className="min-h-screen bg-background-light p-4 pt-36 md:p-20">
       <section className="relative flex h-[calc(100vh-81px)] flex-col items-center justify-center gap-5">
         <div className="relative">
           <Image
@@ -27,7 +27,7 @@ const ScanMeModule = () => {
             height={153.75}
             className="absolute bottom-0 left-1/2 aspect-[520/153] w-full min-w-[300px] max-w-[520px] -translate-x-1/2 sm:min-w-[520px]"
           />
-          <h1 className="font-outline-2 text-shadow-lg text-center font-retro text-display-medium shadow-orange-dark sm:text-display-large  sm:text-7xl">
+          <h1 className="font-outline-2 text-shadow-lg text-center font-retro text-display-medium shadow-orange-dark sm:text-7xl  sm:text-display-large">
             Scan Me
           </h1>
         </div>
