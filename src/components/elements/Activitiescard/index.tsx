@@ -34,7 +34,7 @@ export const Activitiescard: React.FC<ActivitiesProp> = ({
           </p>
           <div className="w-full px-10">
             <Countdown
-              date={'2023-10-16 18:30'}
+              date={'2023-9-30 17:00'}
               subTitleClassName="text-cream-light"
             />
           </div>
